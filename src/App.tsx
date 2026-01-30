@@ -13,6 +13,7 @@ import OurSolution from "./pages/OurSolution";
 import Technology from "./pages/Technology";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -22,19 +23,21 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/industries" element={<Industries />} />
-          <Route path="/why-choose-us" element={<WhyChooseUs />} />
-          <Route path="/the-problem" element={<TheProblem />} />
-          <Route path="/our-solution" element={<OurSolution />} />
-          <Route path="/technology" element={<Technology />} />
-          <Route path="/contact" element={<Contact />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/industries" element={<Industries />} />
+            <Route path="/why-choose-us" element={<WhyChooseUs />} />
+            <Route path="/the-problem" element={<TheProblem />} />
+            <Route path="/our-solution" element={<OurSolution />} />
+            <Route path="/technology" element={<Technology />} />
+            <Route path="/contact" element={<Contact />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </ScrollToTop>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
