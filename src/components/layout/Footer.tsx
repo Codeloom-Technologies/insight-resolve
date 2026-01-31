@@ -1,23 +1,23 @@
-import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Linkedin, Twitter } from 'lucide-react';
+import { Link } from "react-router-dom";
+import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
 
 const footerLinks = {
   company: [
-    { name: 'About Us', href: '/about' },
-    { name: 'Services', href: '/services' },
-    { name: 'Industries', href: '/industries' },
-    { name: 'Technology', href: '/technology' },
+    { name: "About Us", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Industries", href: "/industries" },
+    { name: "Technology", href: "/technology" },
   ],
   resources: [
-    { name: 'Why Choose Us', href: '/why-choose-us' },
-    { name: 'The Problem', href: '/the-problem' },
-    { name: 'Our Solution', href: '/our-solution' },
-    { name: 'Contact', href: '/contact' },
+    { name: "Why Choose Us", href: "/why-choose-us" },
+    { name: "The Problem", href: "/the-problem" },
+    { name: "Our Solution", href: "/our-solution" },
+    { name: "Contact", href: "/contact" },
   ],
   legal: [
-    { name: 'Privacy Policy', href: '/privacy' },
-    { name: 'Terms of Service', href: '/terms' },
-    { name: 'Cookie Policy', href: '/cookies' },
+    { name: "Privacy Policy", href: "/privacy" },
+    { name: "Terms of Service", href: "/terms" },
+    { name: "Cookie Policy", href: "/cookies" },
   ],
 };
 
@@ -30,12 +30,15 @@ export function Footer() {
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-2 mb-6">
               <div className="w-10 h-10 rounded-xl bg-accent flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-xl">IR</span>
+                <span className="text-accent-foreground font-bold text-xl">
+                  IR
+                </span>
               </div>
               <span className="text-xl font-bold">InsightResolve</span>
             </Link>
             <p className="text-primary-foreground/70 mb-6 max-w-sm">
-              Smart. Compliance. Consistent. The UK's first smart, compliance-driven complaint handling service.
+              Smart. Compliance. Consistent. The UK's first smart,
+              compliance-driven complaint handling service.
             </p>
             <div className="space-y-3">
               <a
@@ -46,11 +49,11 @@ export function Footer() {
                 hello@insightresolve.com
               </a>
               <a
-                href="tel:+44123456789"
+                href="tel:+4474443738070"
                 className="flex items-center gap-3 text-primary-foreground/70 hover:text-accent transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                +44 (0) 123 456 789
+                +44 (74) 443 738 070
               </a>
               <div className="flex items-center gap-3 text-primary-foreground/70">
                 <MapPin className="w-5 h-5" />
