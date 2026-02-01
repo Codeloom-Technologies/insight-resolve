@@ -16,7 +16,7 @@ export function CTASection() {
           </h2>
           <p className="text-lg text-primary-foreground/70 mb-10">
             Join the growing number of organisations trusting InsightResolve for smarter, 
-            faster, compliant complaint resolution.
+            faster, call handling and compliant resolution.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

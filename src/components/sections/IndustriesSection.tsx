@@ -19,7 +19,7 @@ const industries = [
   { icon: Flame, name: 'Energy', description: 'Ofgem aligned' },
   { icon: Droplets, name: 'Utilities', description: 'Water & waste services' },
   { icon: Smartphone, name: 'Telecoms', description: 'Ofcom compliant' },
-  { icon: ShoppingBag, name: 'Retail', description: 'Consumer protection' },
+  { icon: ShoppingBag, name: 'Retail/Services', description: 'Consumer protection' },
   { icon: AlertTriangle, name: 'High-Risk Sectors', description: 'Specialist support' },
 ];
 
@@ -34,7 +34,7 @@ export function IndustriesSection() {
             Expertise Across Regulated Sectors
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From startups to established enterprises, we provide compliant complaint handling 
+            From startups to established enterprises, we provide compliant and call handling 
             tailored to your industry's unique regulatory requirements.
           </p>
         </div>

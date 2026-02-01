@@ -33,7 +33,7 @@ export function Footer() {
               <Logo size="lg" showTagline variant="full" theme="dark" />
             </Link>
             <p className="text-primary-foreground/70 mb-6 max-w-sm">
-              The UK's first smart, compliance-driven complaint handling service.
+              The UK's first smart, compliance-driven call and complaint handling service.
             </p>
             <div className="space-y-3">
               <a

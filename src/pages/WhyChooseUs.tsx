@@ -28,7 +28,7 @@ const reasons = [
     icon: Award,
     title: 'Consistent Quality',
     description: 'Structured workflows and quality assurance processes ensure every case meets the same high standard, regardless of volume or complexity.',
-    highlight: '99.8% quality score',
+    highlight: '80% quality score',
   },
   {
     icon: Eye,
@@ -58,7 +58,7 @@ const reasons = [
     icon: CheckCircle,
     title: 'Proven Track Record',
     description: 'Trusted by organisations across financial services, insurance, energy, utilities, telecoms, and retail sectors.',
-    highlight: '500+ clients served',
+    highlight: '5+ clients served',
   },
 ];
 

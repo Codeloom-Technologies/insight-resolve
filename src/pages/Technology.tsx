@@ -1,67 +1,75 @@
-import { Layout } from '@/components/layout/Layout';
-import { CTASection } from '@/components/sections/CTASection';
-import { 
-  Brain, 
-  AlertTriangle, 
-  Clock, 
-  Workflow, 
-  Scale, 
+import { Layout } from "@/components/layout/Layout";
+import { CTASection } from "@/components/sections/CTASection";
+import {
+  Brain,
+  AlertTriangle,
+  Clock,
+  Workflow,
+  Scale,
   FileCheck,
   BarChart,
   Cpu,
   Lock,
   Zap,
-  Shield
-} from 'lucide-react';
+  Shield,
+} from "lucide-react";
 
 const features = [
   {
     icon: Brain,
-    title: 'Real-Time Compliance Logic',
-    description: 'Built-in regulatory rules engine that guides every case through compliant pathways, automatically flagging deviations.',
+    title: "Real-Time Compliance Logic",
+    description:
+      "Built-in regulatory rules engine that guides every case through compliant pathways, automatically flagging deviations.",
   },
   {
     icon: AlertTriangle,
-    title: 'Risk Detection',
-    description: 'AI-powered risk scoring identifies potential escalations, vulnerable customers, and compliance risks in real-time.',
+    title: "Risk Detection",
+    description:
+      "AI-powered risk scoring identifies potential escalations, vulnerable customers, and compliance risks in real-time.",
   },
   {
     icon: Clock,
-    title: 'SLA Tracking',
-    description: 'Automated monitoring of regulatory and internal SLAs with proactive alerts before deadlines are missed.',
+    title: "SLA Tracking",
+    description:
+      "Automated monitoring of regulatory and internal SLAs with proactive alerts before deadlines are missed.",
   },
   {
     icon: Workflow,
-    title: 'Workflow Automation',
-    description: 'Intelligent routing, automatic task assignment, and structured workflows that eliminate manual inefficiency.',
+    title: "Workflow Automation",
+    description:
+      "Intelligent routing, automatic task assignment, and structured workflows that eliminate manual inefficiency.",
   },
   {
     icon: Scale,
-    title: 'Regulatory Alignment',
-    description: 'Pre-configured for FCA, Ofgem, Ofcom, and other UK regulatory requirements. Always up-to-date with the latest rules.',
+    title: "Regulatory Alignment",
+    description:
+      "Pre-configured for FCA, Ofgem, Ofcom, Housing ombudsman and other UK regulatory requirements. Always up-to-date with the latest rules.",
   },
   {
     icon: FileCheck,
-    title: 'Audit-Ready Management',
-    description: 'Complete audit trails, document management, and evidence collection for regulatory examinations.',
+    title: "Audit-Ready Management",
+    description:
+      "Complete audit trails, document management, and evidence collection for regulatory examinations.",
   },
   {
     icon: BarChart,
-    title: 'Predictive Analytics',
-    description: 'Advanced analytics that identify trends, predict potential issues, and provide actionable insights for improvement.',
+    title: "Predictive Analytics",
+    description:
+      "Advanced analytics that identify trends, predict potential issues, and provide actionable insights for improvement.",
   },
   {
     icon: Lock,
-    title: 'Enterprise Security',
-    description: 'Bank-grade security with encryption, access controls, and compliance with ISO 27001 and GDPR requirements.',
+    title: "Enterprise Security",
+    description:
+      "Bank-grade security with encryption, access controls, and compliance with GDPR requirements.",
   },
 ];
 
 const stats = [
-  { value: '99.9%', label: 'Uptime SLA' },
-  { value: '<200ms', label: 'Response Time' },
-  { value: '256-bit', label: 'Encryption' },
-  { value: 'ISO 27001', label: 'Certified' },
+  { value: "80%", label: "Uptime SLA" },
+  { value: "<15m", label: "Response Time" },
+  { value: "256-bit", label: "Encryption" },
+  // { value: 'ISO 27001', label: 'Certified' },
 ];
 
 export default function Technology() {
@@ -78,16 +86,18 @@ export default function Technology() {
             <div>
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 text-accent mb-6">
                 <Cpu className="w-4 h-4" />
-                <span className="text-sm font-medium">Powered by Intelligence</span>
+                <span className="text-sm font-medium">
+                  Powered by Intelligence
+                </span>
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6">
-                CompliFlow{' '}
+                CompliFlow{" "}
                 <span className="text-gradient">Intelligence Engine</span>
               </h1>
               <p className="text-xl text-primary-foreground/70">
-                Our proprietary technology platform is the brain behind InsightResolve. 
-                It guides every case with compliance-aware logic, flags risks in real-time, 
-                and ensures nothing is missed.
+                Our proprietary technology platform is the brain behind
+                InsightResolve. It guides every case with compliance-aware
+                logic, flags risks in real-time, and ensures nothing is missed.
               </p>
             </div>
 
@@ -103,7 +113,7 @@ export default function Technology() {
 
                 {/* Orbiting Elements */}
                 {[Zap, Shield, BarChart, Lock].map((Icon, index) => {
-                  const angle = (index * 90) - 45;
+                  const angle = index * 90 - 45;
                   const radius = 40;
                   const x = 50 + radius * Math.cos(angle * (Math.PI / 180));
                   const y = 50 + radius * Math.sin(angle * (Math.PI / 180));
@@ -114,7 +124,10 @@ export default function Technology() {
                       className="absolute transform -translate-x-1/2 -translate-y-1/2"
                       style={{ left: `${x}%`, top: `${y}%` }}
                     >
-                      <div className="w-16 h-16 rounded-2xl bg-card/90 backdrop-blur-sm flex items-center justify-center text-accent shadow-lg border border-border/50 animate-float" style={{ animationDelay: `${index * 0.5}s` }}>
+                      <div
+                        className="w-16 h-16 rounded-2xl bg-card/90 backdrop-blur-sm flex items-center justify-center text-accent shadow-lg border border-border/50 animate-float"
+                        style={{ animationDelay: `${index * 0.5}s` }}
+                      >
                         <Icon className="w-7 h-7" />
                       </div>
                     </div>
@@ -122,7 +135,10 @@ export default function Technology() {
                 })}
 
                 {/* Connection Ring */}
-                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100">
+                <svg
+                  className="absolute inset-0 w-full h-full"
+                  viewBox="0 0 100 100"
+                >
                   <circle
                     cx="50"
                     cy="50"
@@ -146,8 +162,12 @@ export default function Technology() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-accent mb-1">{stat.value}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
+                <div className="text-2xl md:text-3xl font-bold text-accent mb-1">
+                  {stat.value}
+                </div>
+                <div className="text-sm text-muted-foreground">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>
@@ -162,8 +182,8 @@ export default function Technology() {
               Intelligence at Every Step
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              CompliFlow combines advanced technology with deep regulatory expertise 
-              to deliver smarter, faster, compliant outcomes.
+              CompliFlow combines advanced technology with deep regulatory
+              expertise to deliver smarter, faster, compliant outcomes.
             </p>
           </div>
 
@@ -173,8 +193,12 @@ export default function Technology() {
                 <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-4 group-hover:scale-110 transition-transform">
                   <feature.icon className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">{feature.title}</h3>
-                <p className="text-sm text-muted-foreground">{feature.description}</p>
+                <h3 className="text-lg font-semibold text-foreground mb-2">
+                  {feature.title}
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  {feature.description}
+                </p>
               </div>
             ))}
           </div>

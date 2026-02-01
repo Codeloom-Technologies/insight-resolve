@@ -48,7 +48,7 @@ const solutions = [
 
 const outcomes = [
   '40% faster resolution times',
-  '99.8% compliance rate',
+  '80% compliance rate',
   'Zero regulatory breaches',
   'Real-time case visibility',
   'Actionable insights',

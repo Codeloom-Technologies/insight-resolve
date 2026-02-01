@@ -117,7 +117,7 @@ export default function About() {
               Smarter, Safer, More Consistent
             </h2>
             <p className="text-lg text-muted-foreground">
-              Our mission is to redefine complaint handling for modern
+              Our mission is to redefine complaint/call handling for modern
               organisations — making it smarter, safer, and more consistent than
               ever before. We believe every complaint is an opportunity to
               demonstrate excellence and build trust.

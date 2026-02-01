@@ -13,7 +13,7 @@ import {
 const services = [
   {
     icon: MessageSquare,
-    title: 'Complaint Handling',
+    title: 'Complaint Handling', // make it top
     description: 'Expert complaint handlers managing every case with precision and care.',
   },
   {

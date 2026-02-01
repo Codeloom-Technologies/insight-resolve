@@ -16,7 +16,7 @@ const industries = [
   {
     icon: Rocket,
     name: 'Startups & Small Businesses',
-    description: 'Scale your complaint handling with confidence. Get enterprise-level compliance without enterprise complexity.',
+    description: 'Scale your complaint/call handling with confidence. Get enterprise-level compliance without enterprise complexity.',
     benefits: ['No setup overhead', 'Scalable pricing', 'Fast implementation', 'Expert support'],
     regulation: 'Various sector-specific requirements',
   },
@@ -29,10 +29,10 @@ const industries = [
   },
   {
     icon: Shield,
-    name: 'Insurance',
+    name: 'Social Housing', // TODO CHANGE WRITE UP
     description: 'Handle claims complaints with the rigour and fairness regulators demand.',
     benefits: ['Claims escalation', 'FOS preparation', 'Vulnerability support', 'Fair outcomes'],
-    regulation: 'FCA & Lloyd\'s requirements',
+    regulation: 'Housing onbudmen & Lloyd\'s requirements',
   },
   {
     icon: Flame,
@@ -57,7 +57,7 @@ const industries = [
   },
   {
     icon: ShoppingBag,
-    name: 'Retail',
+    name: 'Retail/Services',
     description: 'Consumer protection compliant handling for retail and e-commerce businesses.',
     benefits: ['Consumer rights', 'Returns handling', 'Quality issues', 'Service complaints'],
     regulation: 'Consumer Rights Act 2015',
