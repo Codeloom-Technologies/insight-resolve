@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { Logo } from "@/components/Logo";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -54,20 +55,8 @@ export function Header() {
       <nav className="container-wide">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-xl bg-accent flex items-center justify-center">
-              <span className="text-accent-foreground font-bold text-xl">
-                IR
-              </span>
-            </div>
-            <span
-              className={cn(
-                "text-xl font-bold transition-colors",
-                scrolled ? "text-foreground" : "text-primary"
-              )}
-            >
-              InsightResolve
-            </span>
+          <Link to="/" className="flex items-center group">
+            <Logo size="md" />
           </Link>
 
           {/* Desktop Navigation */}
