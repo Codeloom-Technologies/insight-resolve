@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
+import { Logo } from "@/components/Logo";
 
 const footerLinks = {
   company: [
@@ -28,17 +29,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <Link to="/" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-accent flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-xl">
-                  IR
-                </span>
-              </div>
-              <span className="text-xl font-bold">InsightResolve</span>
+            <Link to="/" className="inline-block mb-6">
+              <Logo size="lg" showTagline variant="full" theme="dark" />
             </Link>
             <p className="text-primary-foreground/70 mb-6 max-w-sm">
-              Smart. Compliance. Consistent. The UK's first smart,
-              compliance-driven complaint handling service.
+              The UK's first smart, compliance-driven complaint handling service.
             </p>
             <div className="space-y-3">
               <a

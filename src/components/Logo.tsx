@@ -5,13 +5,15 @@ interface LogoProps {
   showTagline?: boolean;
   size?: "sm" | "md" | "lg";
   variant?: "full" | "icon";
+  theme?: "light" | "dark";
 }
 
 export function Logo({ 
   className, 
   showTagline = false, 
   size = "md",
-  variant = "full" 
+  variant = "full",
+  theme = "light"
 }: LogoProps) {
   const sizes = {
     sm: { icon: "w-8 h-8", text: "text-lg", tagline: "text-[8px]" },
@@ -20,13 +22,15 @@ export function Logo({
   };
 
   const currentSize = sizes[size];
+  const isDark = theme === "dark";
 
   return (
     <div className={cn("flex items-center gap-3", className)}>
-      {/* Icon - Navy square with teal arrow */}
+      {/* Icon - Navy square with teal arrow (or inverted for dark) */}
       <div 
         className={cn(
-          "relative rounded-lg bg-primary flex items-center justify-center",
+          "relative rounded-lg flex items-center justify-center",
+          isDark ? "bg-accent" : "bg-primary",
           currentSize.icon
         )}
       >
@@ -39,7 +43,7 @@ export function Logo({
         >
           <path 
             d="M7 17L17 7M17 7H9M17 7V15" 
-            stroke="hsl(var(--accent))" 
+            stroke={isDark ? "hsl(var(--primary))" : "hsl(var(--accent))"}
             strokeWidth="2.5" 
             strokeLinecap="round" 
             strokeLinejoin="round"
@@ -52,13 +56,14 @@ export function Logo({
         <div className="flex flex-col">
           <div className={cn("font-bold leading-tight", currentSize.text)}>
             <span className="text-accent">Insight</span>
-            <span className="text-primary">Resolve</span>
-            <span className="text-primary">.</span>
+            <span className={isDark ? "text-primary-foreground" : "text-primary"}>Resolve</span>
+            <span className={isDark ? "text-primary-foreground" : "text-primary"}>.</span>
           </div>
           {showTagline && (
             <span 
               className={cn(
-                "font-semibold tracking-[0.2em] text-primary uppercase",
+                "font-semibold tracking-[0.2em] uppercase",
+                isDark ? "text-primary-foreground/80" : "text-primary",
                 currentSize.tagline
               )}
             >
