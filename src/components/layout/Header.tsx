@@ -1,25 +1,25 @@
-import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Menu, X, ChevronDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
-  { name: 'Services', href: '/services' },
-  { name: 'Industries', href: '/industries' },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Services", href: "/services" },
+  { name: "Industries", href: "/industries" },
   {
-    name: 'Why Us',
-    href: '/why-choose-us',
+    name: "Why Us",
+    href: "/why-choose-us",
     children: [
-      { name: 'Why Choose Us', href: '/why-choose-us' },
-      { name: 'The Problem', href: '/the-problem' },
-      { name: 'Our Solution', href: '/our-solution' },
+      { name: "Why Choose Us", href: "/why-choose-us" },
+      { name: "The Problem", href: "/the-problem" },
+      { name: "Our Solution", href: "/our-solution" },
     ],
   },
-  { name: 'Technology', href: '/technology' },
-  { name: 'Contact', href: '/contact' },
+  { name: "Technology", href: "/technology" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export function Header() {
@@ -32,8 +32,8 @@ export function Header() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
@@ -45,10 +45,10 @@ export function Header() {
   return (
     <header
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
-          ? 'bg-card/95 backdrop-blur-lg shadow-md border-b border-border/50'
-          : 'bg-transparent'
+          ? "bg-card/95 backdrop-blur-lg shadow-md border-b border-border/50"
+          : "bg-transparent"
       )}
     >
       <nav className="container-wide">
@@ -56,12 +56,16 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             <div className="w-10 h-10 rounded-xl bg-accent flex items-center justify-center">
-              <span className="text-accent-foreground font-bold text-xl">IR</span>
+              <span className="text-accent-foreground font-bold text-xl">
+                IR
+              </span>
             </div>
-            <span className={cn(
-              "text-xl font-bold transition-colors",
-              scrolled ? "text-foreground" : "text-primary"
-            )}>
+            <span
+              className={cn(
+                "text-xl font-bold transition-colors",
+                scrolled ? "text-foreground" : "text-primary"
+              )}
+            >
               InsightResolve
             </span>
           </Link>
@@ -72,18 +76,20 @@ export function Header() {
               <div
                 key={item.name}
                 className="relative"
-                onMouseEnter={() => item.children && setActiveDropdown(item.name)}
+                onMouseEnter={() =>
+                  item.children && setActiveDropdown(item.name)
+                }
                 onMouseLeave={() => setActiveDropdown(null)}
               >
                 <Link
                   to={item.href}
                   className={cn(
-                    'flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg transition-colors',
+                    "flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg transition-colors",
                     isActive(item.href)
-                      ? 'text-accent'
+                      ? "text-accent"
                       : scrolled
-                      ? 'text-foreground hover:text-accent hover:bg-accent/5'
-                      : 'text-foreground/80 hover:text-accent hover:bg-accent/5'
+                      ? "text-foreground hover:text-accent hover:bg-accent/5"
+                      : "text-foreground/80 hover:text-accent hover:bg-accent/5"
                   )}
                 >
                   {item.name}
@@ -99,10 +105,10 @@ export function Header() {
                           key={child.name}
                           to={child.href}
                           className={cn(
-                            'block px-4 py-2.5 text-sm transition-colors',
+                            "block px-4 py-2.5 text-sm transition-colors",
                             isActive(child.href)
-                              ? 'text-accent bg-accent/5'
-                              : 'text-foreground/80 hover:text-accent hover:bg-accent/5'
+                              ? "text-accent bg-accent/5"
+                              : "text-foreground/80 hover:text-accent hover:bg-accent/5"
                           )}
                         >
                           {child.name}
@@ -131,9 +137,19 @@ export function Header() {
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? (
-              <X className={cn("w-6 h-6", scrolled ? "text-foreground" : "text-primary")} />
+              <X
+                className={cn(
+                  "w-6 h-6",
+                  scrolled ? "text-foreground" : "text-primary"
+                )}
+              />
             ) : (
-              <Menu className={cn("w-6 h-6", scrolled ? "text-foreground" : "text-primary")} />
+              <Menu
+                className={cn(
+                  "w-6 h-6",
+                  scrolled ? "text-foreground" : "text-primary"
+                )}
+              />
             )}
           </button>
         </div>
@@ -148,10 +164,10 @@ export function Header() {
                 <Link
                   to={item.href}
                   className={cn(
-                    'block px-4 py-3 text-base font-medium rounded-lg transition-colors',
+                    "block px-4 py-3 text-base font-medium rounded-lg transition-colors",
                     isActive(item.href)
-                      ? 'text-accent bg-accent/5'
-                      : 'text-foreground hover:text-accent hover:bg-accent/5'
+                      ? "text-accent bg-accent/5"
+                      : "text-foreground hover:text-accent hover:bg-accent/5"
                   )}
                 >
                   {item.name}
@@ -163,10 +179,10 @@ export function Header() {
                         key={child.name}
                         to={child.href}
                         className={cn(
-                          'block px-4 py-2 text-sm rounded-lg transition-colors',
+                          "block px-4 py-2 text-sm rounded-lg transition-colors",
                           isActive(child.href)
-                            ? 'text-accent bg-accent/5'
-                            : 'text-muted-foreground hover:text-accent hover:bg-accent/5'
+                            ? "text-accent bg-accent/5"
+                            : "text-muted-foreground hover:text-accent hover:bg-accent/5"
                         )}
                       >
                         {child.name}
