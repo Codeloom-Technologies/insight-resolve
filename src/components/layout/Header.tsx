@@ -56,7 +56,7 @@ export function Header() {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center group">
-            <Logo size="md" />
+            <Logo size="md" showTagline />
           </Link>
 
           {/* Desktop Navigation */}
