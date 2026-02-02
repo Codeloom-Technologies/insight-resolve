@@ -1,46 +1,59 @@
-import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
-import { 
-  MessageSquare, 
-  Shield, 
-  FileSearch, 
-  BarChart3, 
-  Settings, 
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import {
+  MessageSquare,
+  Shield,
+  FileSearch,
+  BarChart3,
+  Settings,
   Users,
-  ArrowRight
-} from 'lucide-react';
+  ArrowRight,
+  Phone,
+} from "lucide-react";
 
 const services = [
   {
+    icon: Phone,
+    title: "Call Handling (Inbound & Outbound)",
+    description:
+      "Professional call handling services for complaint intake and customer communication.",
+  },
+  {
     icon: MessageSquare,
-    title: 'Complaint Handling', // make it top
-    description: 'Expert complaint handlers managing every case with precision and care.',
+    title: "Complaint Handling", // make it top
+    description:
+      "Expert complaint handlers managing every case with precision and care.",
   },
   {
     icon: Shield,
-    title: 'Compliance-Driven Management',
-    description: 'Every step aligned with regulatory requirements and best practices.',
+    title: "Compliance-Driven Management",
+    description:
+      "Every step aligned with regulatory requirements and best practices.",
   },
   {
     icon: FileSearch,
-    title: 'Case Review & Assessments',
-    description: 'Independent reviews ensuring fair outcomes and regulatory compliance.',
+    title: "Case Review & Assessments",
+    description:
+      "Independent reviews ensuring fair outcomes and regulatory compliance.",
   },
   {
     icon: BarChart3,
-    title: 'Reporting & Insights',
-    description: 'Data-driven insights to identify trends and prevent future issues.',
+    title: "Reporting & Insights",
+    description:
+      "Data-driven insights to identify trends and prevent future issues.",
   },
   {
     icon: Settings,
-    title: 'System Integration',
-    description: 'Seamless integration with your existing CRM and business systems.',
+    title: "System Integration",
+    description:
+      "Seamless integration with your existing CRM and business systems.",
   },
-  {
-    icon: Users,
-    title: 'Training Services',
-    description: 'Upskill your team with compliance-focused training programmes.',
-  },
+  // {
+  //   icon: Users,
+  //   title: "Training Services",
+  //   description:
+  //     "Upskill your team with compliance-focused training programmes.",
+  // },
 ];
 
 export function ServicesPreview() {
@@ -54,8 +67,8 @@ export function ServicesPreview() {
             Comprehensive Complaint Solutions
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From initial contact to final resolution, we handle every aspect of complaint 
-            management with expertise and compliance at the core.
+            From initial contact to final resolution, we handle every aspect of
+            complaint management with expertise and compliance at the core.
           </p>
         </div>
 
@@ -70,7 +83,9 @@ export function ServicesPreview() {
               <div className="feature-icon mb-6 group-hover:scale-110 transition-transform">
                 <service.icon className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">{service.title}</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-3">
+                {service.title}
+              </h3>
               <p className="text-muted-foreground">{service.description}</p>
             </div>
           ))}

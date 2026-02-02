@@ -69,7 +69,7 @@ const stats = [
   { value: "80%", label: "Uptime SLA" },
   { value: "<15m", label: "Response Time" },
   { value: "256-bit", label: "Encryption" },
-  // { value: 'ISO 27001', label: 'Certified' },
+  { value: "GDPR", label: "Compliant" },
 ];
 
 export default function Technology() {

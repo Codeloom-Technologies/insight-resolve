@@ -15,6 +15,18 @@ import {
 
 const services = [
   {
+    icon: Phone,
+    title: "Call Handling (Inbound & Outbound)",
+    description:
+      "Professional call handling services for complaint intake and customer communication.",
+    features: [
+      "Inbound support",
+      "Outbound follow-up",
+      "Script development",
+      "Quality monitoring",
+    ],
+  },
+  {
     icon: MessageSquare,
     title: "Complaint Handling",
     description:
@@ -109,18 +121,6 @@ const services = [
       "Communication training",
       "Continuous development",
       "ethics-driven customer engagement",
-    ],
-  },
-  {
-    icon: Phone,
-    title: "Call Handling (Inbound & Outbound)",
-    description:
-      "Professional call handling services for complaint intake and customer communication.",
-    features: [
-      "Inbound support",
-      "Outbound follow-up",
-      "Script development",
-      "Quality monitoring",
     ],
   },
   // {
