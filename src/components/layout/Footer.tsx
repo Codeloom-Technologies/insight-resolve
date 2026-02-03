@@ -30,7 +30,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link to="/" className="inline-block mb-6">
-              <Logo size="lg" showTagline variant="full" theme="dark" />
+              <Logo size="lg" showTagline />
             </Link>
             <p className="text-primary-foreground/70 mb-6 max-w-sm">
               The UK's first smart, compliance-driven call and complaint handling service.
