@@ -15,18 +15,6 @@ import {
 
 const services = [
   {
-    icon: Phone,
-    title: "Call Handling (Inbound & Outbound)",
-    description:
-      "Professional call handling services for complaint intake and customer communication.",
-    features: [
-      "Inbound support",
-      "Outbound follow-up",
-      "Script development",
-      "Quality monitoring",
-    ],
-  },
-  {
     icon: MessageSquare,
     title: "Complaint Handling",
     description:
@@ -39,17 +27,30 @@ const services = [
     ],
   },
   {
-    icon: Shield,
-    title: "Compliance-Driven Case Management",
+    icon: Phone,
+    title: "Call Handling (Inbound & Outbound)",
     description:
-      "Every case managed with regulatory requirements at the core, ensuring full compliance at every step.",
+      "Professional call handling services for complaint intake and customer communication.",
     features: [
-      "Ombudsman",
-      "Ofgem compliance",
-      "Ofcom requirements",
-      "Industry standards",
+      "Inbound support",
+      "Outbound follow-up",
+      "Script development",
+      "Quality monitoring",
     ],
   },
+  {
+    icon: Eye,
+    title: "Client Portal Access",
+    description:
+      "Real-time visibility into every case through our secure, intuitive client portal.",
+    features: [
+      "Live case tracking",
+      "Document access",
+      "Performance metrics",
+      "Audit trails",
+    ],
+  },
+
   {
     icon: FileSearch,
     title: "Case Review & Independent Assessments",
@@ -87,42 +88,42 @@ const services = [
     ],
   },
   {
-    icon: Eye,
-    title: "Client Portal Access",
+    icon: Shield,
+    title: "Compliance-Driven Case Management",
     description:
-      "Real-time visibility into every case through our secure, intuitive client portal.",
+      "Every case managed with regulatory requirements at the core, ensuring full compliance at every step.",
     features: [
-      "Live case tracking",
-      "Document access",
-      "Performance metrics",
-      "Audit trails",
+      "Ombudsman",
+      "Ofgem compliance",
+      "Ofcom requirements",
+      "Industry standards",
     ],
   },
-  {
-    icon: FileText,
-    title: "Policy & Process Support",
-    description:
-      "Expert guidance on complaint handling policies and processes to meet regulatory standards.",
-    features: [
-      "Policy development",
-      "Process optimisation",
-      "Compliance review",
-      "Best practices",
-    ],
-  },
-  {
-    icon: Users,
-    title: "Training Services",
-    description:
-      "Upskill your internal teams with our compliance and customer focused training programmes.",
-    features: [
-      "Regulatory training",
-      "Case handling skills",
-      "Communication training",
-      "Continuous development",
-      "ethics-driven customer engagement",
-    ],
-  },
+  // {
+  //   icon: FileText,
+  //   title: "Policy & Process Support",
+  //   description:
+  //     "Expert guidance on complaint handling policies and processes to meet regulatory standards.",
+  //   features: [
+  //     "Policy development",
+  //     "Process optimisation",
+  //     "Compliance review",
+  //     "Best practices",
+  //   ],
+  // },
+  // {
+  //   icon: Users,
+  //   title: "Training Services",
+  //   description:
+  //     "Upskill your internal teams with our compliance and customer focused training programmes.",
+  //   features: [
+  //     "Regulatory training",
+  //     "Case handling skills",
+  //     "Communication training",
+  //     "Continuous development",
+  //     "ethics-driven customer engagement",
+  //   ],
+  // },
   // {
   //   icon: Heart,
   //   title: "Ethics-Driven Customer Engagement",

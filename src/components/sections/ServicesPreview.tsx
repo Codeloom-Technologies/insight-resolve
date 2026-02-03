@@ -13,17 +13,18 @@ import {
 
 const services = [
   {
+    icon: MessageSquare,
+    title: "Complaint Handling",
+    description:
+      "Expert complaint handlers managing every case with precision and care.",
+  },
+  {
     icon: Phone,
     title: "Call Handling (Inbound & Outbound)",
     description:
       "Professional call handling services for complaint intake and customer communication.",
   },
-  {
-    icon: MessageSquare,
-    title: "Complaint Handling", // make it top
-    description:
-      "Expert complaint handlers managing every case with precision and care.",
-  },
+
   {
     icon: Shield,
     title: "Compliance-Driven Management",
@@ -32,7 +33,7 @@ const services = [
   },
   {
     icon: FileSearch,
-    title: "Case Review & Assessments",
+    title: "Case Review & Independent Assessments",
     description:
       "Independent reviews ensuring fair outcomes and regulatory compliance.",
   },
