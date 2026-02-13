@@ -61,15 +61,15 @@ export default function Contact() {
     const message = formData.get("message") as string;
 
     // Validate required fields
-    // if (!firstName || !lastName || !email || !company || !message) {
-    //   toast({
-    //     title: "Error",
-    //     description: "Please fill in all required fields",
-    //     variant: "destructive",
-    //   });
-    //   setIsSubmitting(false);
-    //   return;
-    // }
+    if (!firstName || !lastName || !email || !company || !message) {
+      toast({
+        title: "Error",
+        description: "Please fill in all required fields",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      return;
+    }
 
     // Create email subject based on selected type
     let subject = "";
@@ -294,13 +294,13 @@ export default function Contact() {
                         <label className="block text-sm font-medium text-foreground mb-2">
                           First Name *
                         </label>
-                        <Input placeholder="John" required />
+                        <Input placeholder="John" required name="firstName" />
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-foreground mb-2">
                           Last Name *
                         </label>
-                        <Input placeholder="Smith" required />
+                        <Input placeholder="Smith" required name="lastName" />
                       </div>
                     </div>
 
@@ -313,6 +313,7 @@ export default function Contact() {
                           type="email"
                           placeholder="john@company.com"
                           required
+                          name="email"
                         />
                       </div>
                       <div>
@@ -323,6 +324,7 @@ export default function Contact() {
                           type="tel"
                           placeholder="+44 (0) 123 456 789"
                           required
+                          name="phone"
                         />
                       </div>
                     </div>
@@ -331,7 +333,11 @@ export default function Contact() {
                       <label className="block text-sm font-medium text-foreground mb-2">
                         Company *
                       </label>
-                      <Input placeholder="Your company name" required />
+                      <Input
+                        placeholder="Your company name"
+                        required
+                        name="company"
+                      />
                     </div>
 
                     <div>
@@ -339,6 +345,7 @@ export default function Contact() {
                         Industry
                       </label>
                       <select
+                        name="industry"
                         className="w-full h-10 px-3 rounded-lg border border-input bg-background text-foreground"
                         required
                       >
@@ -360,6 +367,7 @@ export default function Contact() {
                         Message *
                       </label>
                       <Textarea
+                        name="message"
                         placeholder={
                           selectedType === "demo"
                             ? "Tell us about your current complaint handling challenges and what you'd like to see in the demo..."
