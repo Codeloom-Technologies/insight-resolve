@@ -33,15 +33,16 @@ export function Footer() {
               <Logo size="lg" />
             </Link>
             <p className="text-primary-foreground/70 mb-6 max-w-sm">
-              The UK's first smart, compliance-driven call and complaint handling service.
+              The UK's first smart, compliance-driven call and complaint
+              handling service.
             </p>
             <div className="space-y-3">
               <a
-                href="mailto:hello@insightresolve.com"
+                href="mailto:info@insightresolve.co.uk"
                 className="flex items-center gap-3 text-primary-foreground/70 hover:text-accent transition-colors"
               >
                 <Mail className="w-5 h-5" />
-                hello@insightresolve.com
+                info@insightresolve.co.uk
               </a>
               <a
                 href="tel:+4474443738070"

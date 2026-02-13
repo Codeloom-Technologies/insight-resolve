@@ -50,15 +50,95 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    // Get form data
+    const formData = new FormData(e.currentTarget);
+    const firstName = formData.get("firstName") as string;
+    const lastName = formData.get("lastName") as string;
+    const email = formData.get("email") as string;
+    const phone = formData.get("phone") as string;
+    const company = formData.get("company") as string;
+    const industry = formData.get("industry") as string;
+    const message = formData.get("message") as string;
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    toast({
-      title: "Message sent!",
-      description: "We'll get back to you within 24 hours.",
-    });
+    // Validate required fields
+    // if (!firstName || !lastName || !email || !company || !message) {
+    //   toast({
+    //     title: "Error",
+    //     description: "Please fill in all required fields",
+    //     variant: "destructive",
+    //   });
+    //   setIsSubmitting(false);
+    //   return;
+    // }
+
+    // Create email subject based on selected type
+    let subject = "";
+    switch (selectedType) {
+      case "demo":
+        subject = `Demo Request: ${firstName} ${lastName} from ${company}`;
+        break;
+      case "partnership":
+        subject = `Partnership Enquiry: ${firstName} ${lastName} from ${company}`;
+        break;
+      default:
+        subject = `General Enquiry: ${firstName} ${lastName} from ${company}`;
+    }
+
+    // Create email body
+    const body = `
+  Contact Type: ${
+    selectedType === "demo"
+      ? "Demo Request"
+      : selectedType === "partnership"
+      ? "Partnership Enquiry"
+      : "General Enquiry"
+  }
+  
+  Personal Information:
+  -------------------
+  First Name: ${firstName}
+  Last Name: ${lastName}
+  Email: ${email}
+  Phone: ${phone || "Not provided"}
+  Company: ${company}
+  Industry: ${industry || "Not specified"}
+  
+  Message:
+  --------
+  ${message}
+  
+  ---
+  This message was sent from the InsightResolve contact form.
+    `.trim();
+
+    // Create mailto link
+    const mailtoLink = `mailto:info@insightresolve.co.uk?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    try {
+      // Open email client
+      window.location.href = mailtoLink;
+
+      // Show success message
+      toast({
+        title: "Opening email client",
+        description: "Please send the email to complete your message.",
+      });
+
+      // Simulate a short delay for UI feedback
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+
+      setIsSubmitted(true);
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to open email client. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -96,7 +176,7 @@ export default function Contact() {
 
               <div className="space-y-6 mb-8">
                 <a
-                  href="mailto:hello@insightresolve.com"
+                  href="mailto:info@insightresolve.co.uk"
                   className="flex items-start gap-4 group"
                 >
                   <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
@@ -105,7 +185,7 @@ export default function Contact() {
                   <div>
                     <p className="font-medium text-foreground">Email</p>
                     <p className="text-muted-foreground">
-                      hello@insightresolve.com
+                      info@insightresolve.co.uk
                     </p>
                   </div>
                 </a>
@@ -239,7 +319,11 @@ export default function Contact() {
                         <label className="block text-sm font-medium text-foreground mb-2">
                           Phone
                         </label>
-                        <Input type="tel" placeholder="+44 (0) 123 456 789" />
+                        <Input
+                          type="tel"
+                          placeholder="+44 (0) 123 456 789"
+                          required
+                        />
                       </div>
                     </div>
 
@@ -254,7 +338,10 @@ export default function Contact() {
                       <label className="block text-sm font-medium text-foreground mb-2">
                         Industry
                       </label>
-                      <select className="w-full h-10 px-3 rounded-lg border border-input bg-background text-foreground">
+                      <select
+                        className="w-full h-10 px-3 rounded-lg border border-input bg-background text-foreground"
+                        required
+                      >
                         <option value="">Select your industry</option>
                         <option value="financial-services">
                           Financial Services
