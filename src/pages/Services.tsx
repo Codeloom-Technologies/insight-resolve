@@ -30,7 +30,7 @@ const services = [
     icon: Phone,
     title: "Call Handling (Inbound & Outbound)",
     description:
-      "Professional call handling services for complaint intake and customer communication.",
+      "Professional call handling services and customer communication.",
     features: [
       "Inbound support",
       "Outbound follow-up",
@@ -87,18 +87,18 @@ const services = [
       "Custom connectors",
     ],
   },
-  {
-    icon: Shield,
-    title: "Compliance-Driven Case Management",
-    description:
-      "Every case managed with regulatory requirements at the core, ensuring full compliance at every step.",
-    features: [
-      "Ombudsman",
-      "Ofgem compliance",
-      "Ofcom requirements",
-      "Industry standards",
-    ],
-  },
+  // {
+  //   icon: Shield,
+  //   title: "Compliance-Driven Case Management",
+  //   description:
+  //     "Every case managed with regulatory requirements at the core, ensuring full compliance at every step.",
+  //   features: [
+  //     "Ombudsman",
+  //     "Ofgem compliance",
+  //     "Ofcom requirements",
+  //     "Industry standards",
+  //   ],
+  // },
   // {
   //   icon: FileText,
   //   title: "Policy & Process Support",

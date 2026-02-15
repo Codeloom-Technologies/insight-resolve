@@ -166,13 +166,13 @@ export default function Industries() {
                       {industry.description}
                     </p>
 
-                    <div className="mb-4">
+                    {/* <div className="mb-4">
                       <span className="text-xs font-medium text-accent uppercase tracking-wide">
                         {industry.regulation}
                       </span>
-                    </div>
+                    </div> */}
 
-                    <ul className="grid grid-cols-2 gap-2">
+                    {/* <ul className="grid grid-cols-2 gap-2">
                       {industry.benefits.map((benefit) => (
                         <li
                           key={benefit}
@@ -182,7 +182,7 @@ export default function Industries() {
                           {benefit}
                         </li>
                       ))}
-                    </ul>
+                    </ul> */}
                   </div>
                 </div>
               </div>

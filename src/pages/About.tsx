@@ -1,6 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { CTASection } from "@/components/sections/CTASection";
-import { Shield, Zap, Target, Users, Award, Globe } from "lucide-react";
+import { Shield, Zap, Target, Users, Award, Globe, Database } from "lucide-react";
 
 const values = [
   {
@@ -13,7 +13,7 @@ const values = [
     icon: Zap,
     title: "Innovation Driven",
     description:
-      "We continuously improve our technology and processes to stay ahead of industry demands.",
+      "We continuously improve our services and processes to stay ahead of industry demands.",
   },
   {
     icon: Target,
@@ -34,10 +34,10 @@ const values = [
       "Consistent, high-quality service delivery is our non-negotiable standard.",
   },
   {
-    icon: Globe,
-    title: "Global Standards",
+    icon: Database,
+    title: "Data Insight",
     description:
-      "We apply international best practices while meeting local regulatory requirements.",
+      "We focus on insights that lead to real outcomes, which helps clients make informed decisions.",
   },
 ];
 
@@ -61,7 +61,7 @@ export default function About() {
             <p className="text-xl text-primary-foreground/70">
               InsightResolve is an Outsourcing company which was created with a
               simple belief: complaint handling should be smarter, faster, and
-              fully compliant — not a stressful, inconsistent, or risky process
+              consistent — not a stressful, inconsistent, or risky process
               for businesses.
             </p>
           </div>
@@ -100,7 +100,7 @@ export default function About() {
             <div className="bg-secondary/50 rounded-2xl p-8 lg:p-12">
               <blockquote className="text-xl md:text-2xl font-medium text-foreground mb-6">
                 "We don't just resolve complaints. We protect your customers,
-                your reputation, and your compliance position."
+                your reputation, and help build trust."
               </blockquote>
               <div className="w-16 h-1 bg-accent rounded-full" />
             </div>
