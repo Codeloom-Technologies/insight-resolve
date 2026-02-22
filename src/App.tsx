@@ -13,6 +13,8 @@ import OurSolution from "./pages/OurSolution";
 import Technology from "./pages/Technology";
 import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
+import Cookies from "./pages/Cookies";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -35,6 +37,8 @@ const App = () => (
             <Route path="/our-solution" element={<OurSolution />} />
             <Route path="/technology" element={<Technology />} />
             <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="/cookies" element={<Cookies />} />
             <Route path="/contact" element={<Contact />} />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
