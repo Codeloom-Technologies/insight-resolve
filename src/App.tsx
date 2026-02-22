@@ -12,6 +12,7 @@ import TheProblem from "./pages/TheProblem";
 import OurSolution from "./pages/OurSolution";
 import Technology from "./pages/Technology";
 import Contact from "./pages/Contact";
+import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -33,6 +34,7 @@ const App = () => (
             <Route path="/the-problem" element={<TheProblem />} />
             <Route path="/our-solution" element={<OurSolution />} />
             <Route path="/technology" element={<Technology />} />
+            <Route path="/privacy" element={<Privacy />} />
             <Route path="/contact" element={<Contact />} />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
