@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
 import { Logo } from "@/components/Logo";
+import whiteLogoImage from "@/assets/Insight-resolve-w.png";
 
 const footerLinks = {
   company: [
@@ -30,7 +31,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link to="/" className="inline-block mb-6">
-              <Logo size="lg" />
+              <img src={whiteLogoImage} alt="InsightResolve" className="h-14 w-auto object-contain" />
             </Link>
             <p className="text-primary-foreground/70 mb-6 max-w-sm">
               Customer-focus. Resolution Ready.
