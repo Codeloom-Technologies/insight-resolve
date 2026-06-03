@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { CTASection } from "@/components/sections/CTASection";
+import { TeamSection } from "@/components/sections/TeamSection";
 import { Shield, Zap, Target, Users, Award, Globe, Database } from "lucide-react";
 
 const values = [
@@ -150,6 +151,8 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      <TeamSection />
 
       <CTASection />
     </Layout>
