@@ -10,9 +10,9 @@ const team = [
     role: "Founder & CEO",
     image: ceoImage,
     bio: [
-      "Emmanuel is the Founder/CEO of InsightResolve, a seasoned specialist with a career built across some of the UK’s most respected organisations, including Lloyds Banking Group, AMEX, Tesco HQ, and PFP.",
-      "Beginning in frontline customer‑facing roles, he developed a strong foundation in customer advocacy and service recovery as a Client Service Officer at NCOE UK. This early experience shaped their ability to understand customer needs, manage sensitive interactions, and deliver fair, empathetic outcomes.",
-      "His expertise deepened through advanced roles in regulated complaint environments, including Complex Complaint Coordinator at Lloyds Banking Group and Complaint/Data Quality Analyst at PFP UK. In these positions, he led case investigations, ensured FCA‑aligned resolutions, and strengthened data quality frameworks.",
+      "Emmanuel is the Founder/CEO of InsightResolve, a seasoned specialist with a career built across some of the UK’s most respected organisations, including Lloyds Banking Group, AMEX, Tesco HQ, and Places for People.",
+      "Beginning in frontline customer‑facing roles, he developed a strong foundation in customer advocacy and service recovery as a Client Service Officer at Amex UK. This early experience shaped their ability to understand customer needs, manage sensitive interactions, and deliver fair, empathetic outcomes.",
+      "His expertise deepened through advanced roles in regulated complaint environments, including Complex Complaint Coordinator at Lloyds Banking Group and Complaint/Data Quality Analyst at Places for People UK. In these positions, he led case investigations, ensured FCA‑aligned resolutions, and strengthened data quality frameworks.",
       "His analytical capability expanded further as a Data Analyst with AMEX UK, where they transformed complex datasets into insights that improved operational performance, compliance, and customer experience. Alongside this, he built strong technical foundations as a Certified Software Tester, contributing to system validation, workflow optimisation, and digital transformation initiatives.",
       "With leadership experience as a Customer Service Manager at Tesco HQ UK and an academic background culminating in an MSc in Information Technology from Robert Gordon University, Scotland, Emmanuel brings a rare blend of operational, analytical, and technical expertise. Today, he applies this multidisciplinary skill set to drive InsightResolve —helping organisations achieve clarity, compliance, and customer trust."
     ]
@@ -38,7 +38,7 @@ const team = [
   },
   {
     name: "Ezinne Ibe",
-    role: "Founder & Business Manager",
+    role: "Brand Strategist",
     image: founder2Image,
     bio: [
       "Ezinne is a cooperate communication and collaboration consultant. Founder and Business Manager of De‑IbeChimz Multi‑Services. Start-up strategtist with expertise in helping African entrepreneurs through brand story telling.",
