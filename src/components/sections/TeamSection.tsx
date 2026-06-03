@@ -27,7 +27,7 @@ const team = [
     ]
   },
   {
-    name: "Ian",
+    name: "Ian Shelter",
     role: "Senior Corporate Counsel",
     image: founder1Image,
     bio: [
@@ -37,7 +37,7 @@ const team = [
     ]
   },
   {
-    name: "Ezinne",
+    name: "Ezinne Ibe",
     role: "Founder & Business Manager",
     image: founder2Image,
     bio: [
