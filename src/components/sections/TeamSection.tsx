@@ -58,7 +58,7 @@ export const TeamSection = () => {
             Meet Our Leadership Team
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A multidisciplinary team of experts in compliance, technology, law, and business strategy, united by the goal of redefining complaint handling.
+            A multidisciplinary team of experts in compliance, technology, law, and business strategy, united by the goal of redefining customer service.
           </p>
         </div>
 
