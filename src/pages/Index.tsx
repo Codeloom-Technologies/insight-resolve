@@ -6,6 +6,7 @@ import { WhyChooseUsSection } from '@/components/sections/WhyChooseUs';
 import { TechnologySection } from '@/components/sections/TechnologySection';
 import { IndustriesSection } from '@/components/sections/IndustriesSection';
 import { CTASection } from '@/components/sections/CTASection';
+import { ProcessSection } from '@/components/sections/ProcessSection';
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <ServicesPreview />
       <WhyChooseUsSection />
       <TechnologySection />
+      <ProcessSection />
       <IndustriesSection />
       <CTASection />
     </Layout>

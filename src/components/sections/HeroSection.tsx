@@ -30,15 +30,15 @@ export function HeroSection() {
 
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-primary-foreground mb-6 animate-fade-in-up animation-delay-100">
-            Smart. <span className="text-gradient">Compliance.</span>{" "}
+            Smart. <span className="text-gradient">Compliant.</span>{" "}
             Consistent.
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-primary-foreground/70 mb-8 max-w-2xl mx-auto animate-fade-in-up animation-delay-200">
-            Insightresolve is one of the UK’s top complaints handling services,
-            powered by its proprietary CompliFlow intelligence engine and
-            advanced predictive and descriptive analytics. We enhance customer
+            InsightResolve is one of the UK's top Business process outsourcing
+            company, powered by its proprietary CompliFlow intelligence engine
+            and advanced predictive and descriptive analytics. We enhance customer
             service and complaint operations through intelligent workflows, with
             a deeply customer centric approach, helping organizations protect
             trust, reduce risk, maintain customers promises, and achieve
@@ -48,10 +48,11 @@ export function HeroSection() {
           {/* Trust Points */}
           <div className="flex flex-wrap justify-center gap-6 mb-10 animate-fade-in-up animation-delay-300">
             {[
-              "Compliant Resolution",
+              "Complaint Resolution",
               "Call Handling",
-              "Data-Insight Reporting",
-              "Compliant Handling Training",
+              "Data Insight Reporting",
+              "Staff Training",
+              "CRM Integration",
             ].map((point) => (
               <div
                 key={point}
