@@ -33,7 +33,7 @@ const team = [
     bio: [
       "Ian is a seasoned corporate lawyer with extensive experience advising UK and international clients on commercial law, regulatory compliance, and dispute resolution. His background as a practising barrister gives him a sharp understanding of both courtroom advocacy and strategic business counsel.",
       "He represented clients in complex commercial cases and regulatory hearings, earning a reputation for precision, integrity, and pragmatic problem‑solving. Today, he leads corporate advisory initiatives that help businesses navigate risk, strengthen governance, and achieve sustainable growth.",
-      "A member of the Bar Council of England and Wales, Ian embodies InsightResolve’s commitment to excellence, innovation, and trusted legal partnership."
+      "Ian embodies InsightResolve’s commitment to excellence, innovation, and trusted legal partnership."
     ]
   },
   {
